@@ -21,6 +21,8 @@ struct RepositoryDetailView: View {
     }
 }
 
-#Preview {
-    RepositoryDetailView(repository: Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50)))
+struct RepositoryDetailView_Preview: PreviewProvider {
+    static var previews: some View {
+        RepositoryDetailView(repository: Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50)))
+    }
 }

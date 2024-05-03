@@ -94,7 +94,7 @@ struct RepositoryListView: View {
                 if viewModel.isLoading {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .blue))
-                        .scaleEffect(2.0, anchor: .center)
+                    .scaleEffect(2.0, anchor: .center)
                 }
             }
             .navigationTitle("GitHub Repositories")
@@ -125,7 +125,9 @@ struct QueryRow: View {
 }
 
 
-#Preview {
-    RepositoryListView()
+struct RepositoryListView_Preview: PreviewProvider {
+    static var previews: some View {
+        RepositoryListView()
+    }
 }
 

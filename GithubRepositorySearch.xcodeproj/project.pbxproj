@@ -18,6 +18,11 @@
 		5AAD745B2BE53AC4001D353B /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD745A2BE53AC4001D353B /* Const.swift */; };
 		5AAD745D2BE5488A001D353B /* SearchRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD745C2BE5488A001D353B /* SearchRepositoryImpl.swift */; };
 		5AAD745F2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD745E2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift */; };
+		5AAD74622BE54938001D353B /* SearchHistory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74602BE54938001D353B /* SearchHistory.xcdatamodeld */; };
+		5AAD74652BE549BF001D353B /* SearchHistory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74632BE549BF001D353B /* SearchHistory+CoreDataClass.swift */; };
+		5AAD74662BE549BF001D353B /* SearchHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74642BE549BF001D353B /* SearchHistory+CoreDataProperties.swift */; };
+		5AAD74682BE54A2F001D353B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74672BE54A2F001D353B /* CoreDataManager.swift */; };
+		5AAD746A2BE54A61001D353B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74692BE54A61001D353B /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		5AAD745A2BE53AC4001D353B /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		5AAD745C2BE5488A001D353B /* SearchRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryImpl.swift; sourceTree = "<group>"; };
 		5AAD745E2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubGraphQLServiceImpl.swift; sourceTree = "<group>"; };
+		5AAD74612BE54938001D353B /* SearchHistory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SearchHistory.xcdatamodel; sourceTree = "<group>"; };
+		5AAD74632BE549BF001D353B /* SearchHistory+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchHistory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5AAD74642BE549BF001D353B /* SearchHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5AAD74672BE54A2F001D353B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5AAD74692BE54A61001D353B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,7 @@
 				5AAD744C2BE53456001D353B /* Service */,
 				5AAD744D2BE53463001D353B /* CoreData */,
 				5AAD741F2BE5313E001D353B /* GithubRepositorySearchApp.swift */,
+				5AAD74692BE54A61001D353B /* Persistence.swift */,
 				5AAD745A2BE53AC4001D353B /* Const.swift */,
 				5AAD74232BE5313F001D353B /* Assets.xcassets */,
 				5AAD74252BE5313F001D353B /* GithubRepositorySearch.entitlements */,
@@ -161,6 +172,10 @@
 		5AAD744D2BE53463001D353B /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				5AAD74672BE54A2F001D353B /* CoreDataManager.swift */,
+				5AAD74632BE549BF001D353B /* SearchHistory+CoreDataClass.swift */,
+				5AAD74642BE549BF001D353B /* SearchHistory+CoreDataProperties.swift */,
+				5AAD74602BE54938001D353B /* SearchHistory.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -311,10 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAD74652BE549BF001D353B /* SearchHistory+CoreDataClass.swift in Sources */,
 				5AAD74552BE53A01001D353B /* RepositoryModel.swift in Sources */,
 				5AAD74512BE5370D001D353B /* RepositoryListView.swift in Sources */,
+				5AAD74622BE54938001D353B /* SearchHistory.xcdatamodeld in Sources */,
 				5AAD74202BE5313E001D353B /* GithubRepositorySearchApp.swift in Sources */,
 				5AAD745D2BE5488A001D353B /* SearchRepositoryImpl.swift in Sources */,
+				5AAD74682BE54A2F001D353B /* CoreDataManager.swift in Sources */,
+				5AAD746A2BE54A61001D353B /* Persistence.swift in Sources */,
+				5AAD74662BE549BF001D353B /* SearchHistory+CoreDataProperties.swift in Sources */,
 				5AAD74572BE53A23001D353B /* SearchRepository.swift in Sources */,
 				5AAD74592BE53A40001D353B /* GitHubGraphQLService.swift in Sources */,
 				5AAD745F2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift in Sources */,
@@ -665,6 +685,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5AAD74602BE54938001D353B /* SearchHistory.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AAD74612BE54938001D353B /* SearchHistory.xcdatamodel */,
+			);
+			currentVersion = 5AAD74612BE54938001D353B /* SearchHistory.xcdatamodel */;
+			path = SearchHistory.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5AAD74142BE5313E001D353B /* Project object */;
 }

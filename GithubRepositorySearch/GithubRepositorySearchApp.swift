@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct GithubRepositorySearchApp: App {
+    let persistenceController = PersistenceController.shared
+
     var body: some Scene {
         WindowGroup {
             RepositoryListView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

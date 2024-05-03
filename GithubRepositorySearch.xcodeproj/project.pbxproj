@@ -16,6 +16,8 @@
 		5AAD74572BE53A23001D353B /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74562BE53A23001D353B /* SearchRepository.swift */; };
 		5AAD74592BE53A40001D353B /* GitHubGraphQLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74582BE53A40001D353B /* GitHubGraphQLService.swift */; };
 		5AAD745B2BE53AC4001D353B /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD745A2BE53AC4001D353B /* Const.swift */; };
+		5AAD745D2BE5488A001D353B /* SearchRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD745C2BE5488A001D353B /* SearchRepositoryImpl.swift */; };
+		5AAD745F2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD745E2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5AAD74562BE53A23001D353B /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		5AAD74582BE53A40001D353B /* GitHubGraphQLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubGraphQLService.swift; sourceTree = "<group>"; };
 		5AAD745A2BE53AC4001D353B /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		5AAD745C2BE5488A001D353B /* SearchRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryImpl.swift; sourceTree = "<group>"; };
+		5AAD745E2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubGraphQLServiceImpl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				5AAD74562BE53A23001D353B /* SearchRepository.swift */,
+				5AAD745C2BE5488A001D353B /* SearchRepositoryImpl.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5AAD74582BE53A40001D353B /* GitHubGraphQLService.swift */,
+				5AAD745E2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -308,8 +314,10 @@
 				5AAD74552BE53A01001D353B /* RepositoryModel.swift in Sources */,
 				5AAD74512BE5370D001D353B /* RepositoryListView.swift in Sources */,
 				5AAD74202BE5313E001D353B /* GithubRepositorySearchApp.swift in Sources */,
+				5AAD745D2BE5488A001D353B /* SearchRepositoryImpl.swift in Sources */,
 				5AAD74572BE53A23001D353B /* SearchRepository.swift in Sources */,
 				5AAD74592BE53A40001D353B /* GitHubGraphQLService.swift in Sources */,
+				5AAD745F2BE548A6001D353B /* GitHubGraphQLServiceImpl.swift in Sources */,
 				5AAD745B2BE53AC4001D353B /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

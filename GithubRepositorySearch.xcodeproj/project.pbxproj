@@ -90,6 +90,11 @@
 		5AAD741E2BE5313E001D353B /* GithubRepositorySearch */ = {
 			isa = PBXGroup;
 			children = (
+				5AAD744A2BE53434001D353B /* Screen */,
+				5AAD744E2BE5346F001D353B /* Model */,
+				5AAD744B2BE5344B001D353B /* Repository */,
+				5AAD744C2BE53456001D353B /* Service */,
+				5AAD744D2BE53463001D353B /* CoreData */,
 				5AAD741F2BE5313E001D353B /* GithubRepositorySearchApp.swift */,
 				5AAD74212BE5313E001D353B /* ContentView.swift */,
 				5AAD74232BE5313F001D353B /* Assets.xcassets */,
@@ -113,6 +118,41 @@
 				5AAD74312BE53140001D353B /* GithubRepositorySearchTests.swift */,
 			);
 			path = GithubRepositorySearchTests;
+			sourceTree = "<group>";
+		};
+		5AAD744A2BE53434001D353B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5AAD744B2BE5344B001D353B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5AAD744C2BE53456001D353B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5AAD744D2BE53463001D353B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		5AAD744E2BE5346F001D353B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -8,6 +8,7 @@
 import Foundation
 
 struct Const {
+    // 自身のトークンを設定して下さい。
     static let token: String = "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"
     static let url: URL = URL(string: "https://api.github.com/graphql")!
 }

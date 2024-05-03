@@ -23,33 +23,7 @@ class GitHubGraphQLServiceImpl: GitHubGraphQLService {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
         // GraphQLクエリ
-        let graphqlQuery = """
-        query SearchRepositories($queryString: String!, $afterCursor: String) {
-          search(query: $queryString, type: REPOSITORY, first: 20, after: $afterCursor) {
-            pageInfo {
-              hasNextPage
-              endCursor
-            }
-            edges {
-              node {
-                ... on Repository {
-                  id
-                  name
-                  owner {
-                    login
-                  }
-                  stargazers {
-                    totalCount
-                  }
-                  forks {
-                    totalCount
-                  }
-                }
-              }
-            }
-          }
-        }
-        """
+        let graphqlQuery = GraphQLQueries.searchRepositories
 
         // リクエストボディを作成
         var requestBody: [String: Any] = [

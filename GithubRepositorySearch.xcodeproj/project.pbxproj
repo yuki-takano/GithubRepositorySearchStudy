@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5AAD74202BE5313E001D353B /* GithubRepositorySearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD741F2BE5313E001D353B /* GithubRepositorySearchApp.swift */; };
-		5AAD74222BE5313E001D353B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74212BE5313E001D353B /* ContentView.swift */; };
 		5AAD74242BE5313F001D353B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAD74232BE5313F001D353B /* Assets.xcassets */; };
 		5AAD74282BE5313F001D353B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAD74272BE5313F001D353B /* Preview Assets.xcassets */; };
 		5AAD74322BE53140001D353B /* GithubRepositorySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74312BE53140001D353B /* GithubRepositorySearchTests.swift */; };
+		5AAD74512BE5370D001D353B /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74502BE5370D001D353B /* RepositoryListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +34,13 @@
 /* Begin PBXFileReference section */
 		5AAD741C2BE5313E001D353B /* GithubRepositorySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubRepositorySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAD741F2BE5313E001D353B /* GithubRepositorySearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositorySearchApp.swift; sourceTree = "<group>"; };
-		5AAD74212BE5313E001D353B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5AAD74232BE5313F001D353B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AAD74252BE5313F001D353B /* GithubRepositorySearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GithubRepositorySearch.entitlements; sourceTree = "<group>"; };
 		5AAD74272BE5313F001D353B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5AAD742D2BE53140001D353B /* GithubRepositorySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubRepositorySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAD74312BE53140001D353B /* GithubRepositorySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositorySearchTests.swift; sourceTree = "<group>"; };
 		5AAD74372BE53140001D353B /* GithubRepositorySearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubRepositorySearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AAD74502BE5370D001D353B /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,6 @@
 				5AAD744C2BE53456001D353B /* Service */,
 				5AAD744D2BE53463001D353B /* CoreData */,
 				5AAD741F2BE5313E001D353B /* GithubRepositorySearchApp.swift */,
-				5AAD74212BE5313E001D353B /* ContentView.swift */,
 				5AAD74232BE5313F001D353B /* Assets.xcassets */,
 				5AAD74252BE5313F001D353B /* GithubRepositorySearch.entitlements */,
 				5AAD74262BE5313F001D353B /* Preview Content */,
@@ -123,6 +122,7 @@
 		5AAD744A2BE53434001D353B /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				5AAD744F2BE536E6001D353B /* RepositoryList */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -153,6 +153,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5AAD744F2BE536E6001D353B /* RepositoryList */ = {
+			isa = PBXGroup;
+			children = (
+				5AAD74502BE5370D001D353B /* RepositoryListView.swift */,
+			);
+			path = RepositoryList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AAD74222BE5313E001D353B /* ContentView.swift in Sources */,
+				5AAD74512BE5370D001D353B /* RepositoryListView.swift in Sources */,
 				5AAD74202BE5313E001D353B /* GithubRepositorySearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

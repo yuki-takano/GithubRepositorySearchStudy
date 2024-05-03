@@ -40,10 +40,6 @@ class RepositoryListViewModelTests: XCTestCase {
             guard let self = self else { return }
             XCTAssertFalse(self.viewModel.repositories.isEmpty, "Repositories should not be empty after successful fetch")
             let saveQueries = self.viewModel.coreDataManager.fetchSearchHistory()
-
-            // TODO: delete
-            print("testFetchDataSuccessEmptyInitial_saveQueries = \(saveQueries)")
-
             XCTAssertTrue(saveQueries.contains(query),  "The query should be saved in the search history.")
             XCTAssertTrue(self.viewModel.pageInfo!.hasNextPage, "There is still available for the API inquiry")
             XCTAssertTrue(!self.viewModel.isLoading, "isLoading should be false after fetchData")

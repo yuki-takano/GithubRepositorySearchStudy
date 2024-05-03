@@ -23,6 +23,7 @@
 		5AAD74662BE549BF001D353B /* SearchHistory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74642BE549BF001D353B /* SearchHistory+CoreDataProperties.swift */; };
 		5AAD74682BE54A2F001D353B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74672BE54A2F001D353B /* CoreDataManager.swift */; };
 		5AAD746A2BE54A61001D353B /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD74692BE54A61001D353B /* Persistence.swift */; };
+		5AAD746C2BE54AEA001D353B /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAD746B2BE54AEA001D353B /* RepositoryListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		5AAD74642BE549BF001D353B /* SearchHistory+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchHistory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		5AAD74672BE54A2F001D353B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		5AAD74692BE54A61001D353B /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5AAD746B2BE54AEA001D353B /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				5AAD74502BE5370D001D353B /* RepositoryListView.swift */,
+				5AAD746B2BE54AEA001D353B /* RepositoryListViewModel.swift */,
 			);
 			path = RepositoryList;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				5AAD74622BE54938001D353B /* SearchHistory.xcdatamodeld in Sources */,
 				5AAD74202BE5313E001D353B /* GithubRepositorySearchApp.swift in Sources */,
 				5AAD745D2BE5488A001D353B /* SearchRepositoryImpl.swift in Sources */,
+				5AAD746C2BE54AEA001D353B /* RepositoryListViewModel.swift in Sources */,
 				5AAD74682BE54A2F001D353B /* CoreDataManager.swift in Sources */,
 				5AAD746A2BE54A61001D353B /* Persistence.swift in Sources */,
 				5AAD74662BE549BF001D353B /* SearchHistory+CoreDataProperties.swift in Sources */,

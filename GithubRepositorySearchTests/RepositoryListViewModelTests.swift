@@ -17,7 +17,7 @@ class RepositoryListViewModelTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        coreDataManagerMock = CoreDataManagerMock.mockShared
+        coreDataManagerMock = CoreDataManagerMock.getTestableCoreDataManager()
         repositoryMock = SearchRepositoryMock(jsonFileName: "firstPage", shouldReturnSuccess: true)
         viewModel = RepositoryListViewModel(repository: repositoryMock, coreDataManager: coreDataManagerMock)
     }

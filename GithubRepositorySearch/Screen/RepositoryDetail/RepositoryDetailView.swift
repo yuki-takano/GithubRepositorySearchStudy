@@ -18,14 +18,31 @@ struct RepositoryDetailView: View {
                 .padding(.top, 16)
 
             VStack(alignment: .leading, spacing: 8) {
-                Text("Owner: \(repository.owner.login)")
-                    .font(.headline)
-                Text("Stars: \(repository.stargazers.totalCount)")
-                    .font(.headline)
-                Text("Forks: \(repository.forks.totalCount)")
-                    .font(.headline)
-                Text("Watchers: \(repository.watchers.totalCount)")
-                    .font(.headline)
+                HStack {
+                    Image(systemName: "person.fill")
+                        .frame(width: 20)
+                    Text("Owner: \(repository.owner.login)")
+                        .font(.headline)
+                }
+                HStack {
+                    Image(systemName: "star.fill")
+                        .frame(width: 20)
+                        .foregroundColor(.yellow)
+                    Text("Stars: \(repository.stargazers.totalCount)")
+                        .font(.headline)
+                }
+                HStack {
+                    Image(systemName: "arrow.triangle.branch")
+                        .frame(width: 20)
+                    Text("Forks: \(repository.forks.totalCount)")
+                        .font(.headline)
+                }
+                HStack {
+                    Image(systemName: "eye")
+                        .frame(width: 20)
+                    Text("Watchers: \(repository.watchers.totalCount)")
+                        .font(.headline)
+                }
             }
             .padding(.leading, 8)
         }

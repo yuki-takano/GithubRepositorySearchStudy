@@ -14,10 +14,13 @@
               "login": "ElemeFE"
             },
             "stargazers": {
-              "totalCount": 53952
+              "totalCount": 53971
             },
             "forks": {
-              "totalCount": 14403
+              "totalCount": 14396
+            },
+            "watchers": {
+              "totalCount": 1322
             }
           }
         },
@@ -29,10 +32,13 @@
               "login": "kushview"
             },
             "stargazers": {
-              "totalCount": 1020
+              "totalCount": 1030
             },
             "forks": {
               "totalCount": 93
+            },
+            "watchers": {
+              "totalCount": 38
             }
           }
         },
@@ -44,10 +50,13 @@
               "login": "element-plus"
             },
             "stargazers": {
-              "totalCount": 23160
+              "totalCount": 23242
             },
             "forks": {
-              "totalCount": 13895
+              "totalCount": 13997
+            },
+            "watchers": {
+              "totalCount": 201
             }
           }
         },
@@ -63,6 +72,9 @@
             },
             "forks": {
               "totalCount": 37
+            },
+            "watchers": {
+              "totalCount": 24
             }
           }
         },
@@ -77,7 +89,10 @@
               "totalCount": 346
             },
             "forks": {
-              "totalCount": 43
+              "totalCount": 44
+            },
+            "watchers": {
+              "totalCount": 14
             }
           }
         },
@@ -89,10 +104,13 @@
               "login": "PanJiaChen"
             },
             "stargazers": {
-              "totalCount": 86392
+              "totalCount": 86472
             },
             "forks": {
-              "totalCount": 29957
+              "totalCount": 29960
+            },
+            "watchers": {
+              "totalCount": 2203
             }
           }
         },
@@ -104,10 +122,13 @@
               "login": "element-hq"
             },
             "stargazers": {
-              "totalCount": 10632
+              "totalCount": 10661
             },
             "forks": {
-              "totalCount": 1828
+              "totalCount": 1834
+            },
+            "watchers": {
+              "totalCount": 227
             }
           }
         },
@@ -123,6 +144,9 @@
             },
             "forks": {
               "totalCount": 28
+            },
+            "watchers": {
+              "totalCount": 16
             }
           }
         },
@@ -138,6 +162,9 @@
             },
             "forks": {
               "totalCount": 985
+            },
+            "watchers": {
+              "totalCount": 59
             }
           }
         },
@@ -149,10 +176,13 @@
               "login": "react-native-elements"
             },
             "stargazers": {
-              "totalCount": 24588
+              "totalCount": 24616
             },
             "forks": {
-              "totalCount": 4539
+              "totalCount": 4544
+            },
+            "watchers": {
+              "totalCount": 368
             }
           }
         }

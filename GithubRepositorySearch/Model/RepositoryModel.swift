@@ -35,6 +35,7 @@ struct Repository: Identifiable, Decodable {
     var owner: Owner
     var stargazers: Count
     var forks: Count
+    var watchers: Count
 }
 
 struct Owner: Decodable {

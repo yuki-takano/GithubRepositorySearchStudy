@@ -24,6 +24,8 @@ struct RepositoryDetailView: View {
                     .font(.headline)
                 Text("Forks: \(repository.forks.totalCount)")
                     .font(.headline)
+                Text("Watchers: \(repository.watchers.totalCount)")
+                    .font(.headline)
             }
             .padding(.leading, 8)
         }
@@ -35,6 +37,6 @@ struct RepositoryDetailView: View {
 
 struct RepositoryDetailView_Preview: PreviewProvider {
     static var previews: some View {
-        RepositoryDetailView(repository: Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50)))
+        RepositoryDetailView(repository: Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50), watchers: Count(totalCount: 100)))
     }
 }

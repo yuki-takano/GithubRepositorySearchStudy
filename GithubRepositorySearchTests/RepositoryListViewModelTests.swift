@@ -81,7 +81,7 @@ class RepositoryListViewModelTests: XCTestCase {
         repositoryMock = SearchRepositoryMock(jsonFileName: "secondPage", shouldReturnSuccess: true)
         viewModel = RepositoryListViewModel(repository: repositoryMock, coreDataManager: coreDataManagerMock)
         viewModel.searchText = "Swift"
-        viewModel.repositories = [Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50))]
+        viewModel.repositories = [Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50), watchers: Count(totalCount: 100))]
         viewModel.pageInfo = PageInfo(endCursor: "Y3Vyc29yOjEw", hasNextPage: true)
 
         viewModel.loadMoreContentIfNeeded()
@@ -106,7 +106,7 @@ class RepositoryListViewModelTests: XCTestCase {
         repositoryMock = SearchRepositoryMock(jsonFileName: "secondPage", shouldReturnSuccess: false)
         viewModel = RepositoryListViewModel(repository: repositoryMock, coreDataManager: coreDataManagerMock)
         viewModel.searchText = "Swift"
-        viewModel.repositories = [Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50))]
+        viewModel.repositories = [Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50), watchers: Count(totalCount: 100))]
         viewModel.pageInfo = PageInfo(endCursor: "Y3Vyc29yOjEw", hasNextPage: true)
 
         viewModel.loadMoreContentIfNeeded()
@@ -125,7 +125,7 @@ class RepositoryListViewModelTests: XCTestCase {
 
     // repositoriesのリセット処理のテスト
     func testResetRepositories() {
-        viewModel.repositories = [Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50))]
+        viewModel.repositories = [Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50), watchers: Count(totalCount: 100))]
         viewModel.resetRepositories()
         XCTAssertTrue(viewModel.repositories.isEmpty, "repositories should be empty after resetRepositories")
 

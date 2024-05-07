@@ -14,10 +14,13 @@
               "login": "element-hq"
             },
             "stargazers": {
-              "totalCount": 3216
+              "totalCount": 3221
             },
             "forks": {
               "totalCount": 600
+            },
+            "watchers": {
+              "totalCount": 94
             }
           }
         },
@@ -29,10 +32,13 @@
               "login": "elementor"
             },
             "stargazers": {
-              "totalCount": 6391
+              "totalCount": 6418
             },
             "forks": {
-              "totalCount": 1368
+              "totalCount": 1376
+            },
+            "watchers": {
+              "totalCount": 235
             }
           }
         },
@@ -44,10 +50,13 @@
               "login": "mdbootstrap"
             },
             "stargazers": {
-              "totalCount": 12655
+              "totalCount": 12670
             },
             "forks": {
-              "totalCount": 1578
+              "totalCount": 1581
+            },
+            "watchers": {
+              "totalCount": 218
             }
           }
         },
@@ -59,10 +68,13 @@
               "login": "pqrs-org"
             },
             "stargazers": {
-              "totalCount": 17920
+              "totalCount": 17958
             },
             "forks": {
-              "totalCount": 786
+              "totalCount": 788
+            },
+            "watchers": {
+              "totalCount": 208
             }
           }
         },
@@ -74,10 +86,13 @@
               "login": "element-hq"
             },
             "stargazers": {
-              "totalCount": 1706
+              "totalCount": 1708
             },
             "forks": {
-              "totalCount": 467
+              "totalCount": 468
+            },
+            "watchers": {
+              "totalCount": 78
             }
           }
         },
@@ -89,10 +104,13 @@
               "login": "ElementUI"
             },
             "stargazers": {
-              "totalCount": 3127
+              "totalCount": 3131
             },
             "forks": {
-              "totalCount": 1083
+              "totalCount": 1084
+            },
+            "watchers": {
+              "totalCount": 122
             }
           }
         },
@@ -108,36 +126,9 @@
             },
             "forks": {
               "totalCount": 243
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "MDEwOlJlcG9zaXRvcnkyMjYzMzIxNDg=",
-            "name": "element-desktop",
-            "owner": {
-              "login": "element-hq"
             },
-            "stargazers": {
-              "totalCount": 1043
-            },
-            "forks": {
-              "totalCount": 226
-            }
-          }
-        },
-        {
-          "node": {
-            "id": "MDEwOlJlcG9zaXRvcnk1MzA1MjEwNQ==",
-            "name": "ui-element-samples",
-            "owner": {
-              "login": "GoogleChromeLabs"
-            },
-            "stargazers": {
-              "totalCount": 4113
-            },
-            "forks": {
-              "totalCount": 737
+            "watchers": {
+              "totalCount": 69
             }
           }
         },
@@ -153,6 +144,45 @@
             },
             "forks": {
               "totalCount": 7
+            },
+            "watchers": {
+              "totalCount": 0
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnk1MzA1MjEwNQ==",
+            "name": "ui-element-samples",
+            "owner": {
+              "login": "GoogleChromeLabs"
+            },
+            "stargazers": {
+              "totalCount": 4114
+            },
+            "forks": {
+              "totalCount": 736
+            },
+            "watchers": {
+              "totalCount": 189
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "MDEwOlJlcG9zaXRvcnkyMjYzMzIxNDg=",
+            "name": "element-desktop",
+            "owner": {
+              "login": "element-hq"
+            },
+            "stargazers": {
+              "totalCount": 1044
+            },
+            "forks": {
+              "totalCount": 225
+            },
+            "watchers": {
+              "totalCount": 31
             }
           }
         }

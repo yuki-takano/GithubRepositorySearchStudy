@@ -29,6 +29,9 @@ struct GraphQLQueries {
                   forks {
                     totalCount
                   }
+                  watchers {
+                    totalCount
+                  }
                 }
               }
             }

@@ -78,6 +78,16 @@ struct RepositoryListView: View {
                             Spacer()
                         }
 
+                        if (viewModel.searchHistories.isEmpty) {
+                            HStack {
+                                Text("No Search Histories")
+                                    .font(.subheadline)
+                                    .foregroundStyle(.gray)
+                                    .padding(.leading, 36)
+                                Spacer()
+                            }
+                        }
+
                         List(viewModel.searchHistories.indices, id: \.self) { index in
                             Button(action: {
                                 searchText = viewModel.searchHistories[index]

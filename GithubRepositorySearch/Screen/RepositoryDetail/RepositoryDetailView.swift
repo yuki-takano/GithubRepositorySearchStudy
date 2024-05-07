@@ -12,12 +12,16 @@ struct RepositoryDetailView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Name: \(repository.name)")
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.top, 16)
-
-            VStack(alignment: .leading, spacing: 8) {
+            HStack(alignment: .center) {
+                Image(systemName: "book.fill")
+                    .padding(.top, 20)
+                    .frame(width: 30, height: 30, alignment: .center)
+                Text("\(repository.name)")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.top, 16)
+            }
+            VStack(alignment: .leading, spacing: 20) {
                 HStack {
                     Image(systemName: "person.fill")
                         .frame(width: 20)
@@ -44,7 +48,7 @@ struct RepositoryDetailView: View {
                         .font(.headline)
                 }
             }
-            .padding(.leading, 8)
+            .padding(.leading, 16)
         }
         .navigationBarTitle(Text("Repository Detail"), displayMode: .inline)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)

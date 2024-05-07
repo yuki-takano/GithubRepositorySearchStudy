@@ -74,7 +74,7 @@ struct RepositoryListView: View {
                         }))
                     } else {
                         HStack {
-                            Text("Search History")
+                            Text("Search Histories")
                                 .padding(.leading, 24)
                             Spacer()
                         }

@@ -24,7 +24,6 @@ struct RepositoryListView: View {
                 VStack {
                     HStack {
                         TextField("Search GitHub Repositories", text: $searchText)
-                            .textFieldStyle(.roundedBorder)
                             .padding(EdgeInsets(top: 4, leading: 8, bottom: 4, trailing: 8))
                             .cornerRadius(5)
                             .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.black, lineWidth: 1))

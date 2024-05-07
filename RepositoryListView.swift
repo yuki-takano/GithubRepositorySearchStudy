@@ -107,6 +107,11 @@ struct RepositoryListView: View {
                 }
             }
             .navigationTitle("GitHub Repositories")
+            .alert("Network Error", isPresented: $viewModel.isAPIError) {
+                Button("Close", role: .cancel) {
+                    viewModel.resetAPIError()
+                }
+            }
         }
     }
 }

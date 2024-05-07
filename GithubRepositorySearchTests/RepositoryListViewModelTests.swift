@@ -66,7 +66,8 @@ class RepositoryListViewModelTests: XCTestCase {
             // 検索に失敗したした場合でも後から検索し直す為に検索履歴に保存する仕様にした
             XCTAssertTrue(saveQueries.contains(query),  "The query should be saved in the search history.")
             XCTAssertNil(self.viewModel.pageInfo, "The pageInfo should be nil")
-            XCTAssertTrue(!self.viewModel.isLoading, "isLoading should be false after fetchData")
+            XCTAssertTrue(!self.viewModel.isLoading, "The isLoading should be false after fetchData")
+            XCTAssertTrue(self.viewModel.isAPIError, "The isAPIError should be true after fetchData fail")
             expectation.fulfill()
         }
 
@@ -117,6 +118,7 @@ class RepositoryListViewModelTests: XCTestCase {
             // APIリクエストの初回は成功している想定の為、pageInfoはforce wrap、かつhasNextPageはtrueのまま
             XCTAssertTrue(self.viewModel.pageInfo!.hasNextPage, "There is still available for the API inquiry")
             XCTAssertTrue(!self.viewModel.isLoading, "isLoading should be false after fetchData")
+            XCTAssertTrue(self.viewModel.isAPIError, "The isAPIError should be true after fetchData fail")
             expectation.fulfill()
         }
 
@@ -128,6 +130,13 @@ class RepositoryListViewModelTests: XCTestCase {
         viewModel.repositories = [Repository(id: "1", name: "Repo1", owner: Owner(login: "owner1"), stargazers: Count(totalCount: 100), forks: Count(totalCount: 50), watchers: Count(totalCount: 100))]
         viewModel.resetRepositories()
         XCTAssertTrue(viewModel.repositories.isEmpty, "repositories should be empty after resetRepositories")
+    }
+
+    // isAPIErrorのリセット処理のテスト
+    func testResetIsAPIError() {
+        viewModel.isAPIError = true
+        viewModel.resetAPIError()
+        XCTAssertFalse(self.viewModel.isAPIError, "The isAPIError should be false after resetAPIError")
 
     }
 

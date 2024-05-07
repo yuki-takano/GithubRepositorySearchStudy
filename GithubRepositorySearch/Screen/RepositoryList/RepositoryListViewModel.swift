@@ -14,6 +14,7 @@ class RepositoryListViewModel: ObservableObject {
     var searchText = ""
     @Published var isLoading = false
     @Published var pageInfo: PageInfo?
+    @Published var isAPIError = false
 
     private var cancellables: Set<AnyCancellable> = []
     private let repository: SearchRepository
@@ -54,6 +55,7 @@ class RepositoryListViewModel: ObservableObject {
                 print("Error fetching data: \(error)")
                 await MainActor.run {
                     self.isLoading = false
+                    self.isAPIError = true
                 }
             }
         }
@@ -70,6 +72,10 @@ class RepositoryListViewModel: ObservableObject {
 
     func loadSearchHistory() {
         searchHistories = coreDataManager.fetchSearchHistory()
+    }
+
+    func resetAPIError() {
+        isAPIError = false
     }
 
     private func saveSearchQuery() {

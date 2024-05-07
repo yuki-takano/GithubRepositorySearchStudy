@@ -109,8 +109,9 @@ struct RepositoryRow: View {
         VStack(alignment: .leading) {
             Text(repository.name).font(.headline)
             Text("Owner: \(repository.owner.login)").font(.subheadline)
-            Text("Stars: \(repository.stargazers.totalCount) | Forks: \(repository.forks.totalCount)").font(.subheadline)
-        }.frame(height: 60)
+            Text("Stars: \(repository.stargazers.totalCount)").font(.subheadline)
+            Text("Forks: \(repository.forks.totalCount)").font(.subheadline)
+        }.frame(height: 70)
     }
 }
 
